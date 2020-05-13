@@ -376,17 +376,6 @@ D+
 Text GLabel 2400 2700 0    50   Input ~ 0
 D-
 $Comp
-L random-keyboard-parts:Molex-0548190589 USB1
-U 1 1 5EBB7931
-P 5300 1550
-F 0 "USB1" V 5837 1517 60  0000 C CNN
-F 1 "Molex-0548190589" V 5731 1517 60  0000 C CNN
-F 2 "random-keyboard-parts:Molex-0548190589" H 5300 1550 60  0001 C CNN
-F 3 "" H 5300 1550 60  0001 C CNN
-	1    5300 1550
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:Polyfuse_Small F1
 U 1 1 5EBB7F34
 P 6450 1350
@@ -431,19 +420,17 @@ Connection ~ 6000 1350
 $Comp
 L power:GND #PWR0113
 U 1 1 5EBCD310
-P 5850 1750
-F 0 "#PWR0113" H 5850 1500 50  0001 C CNN
-F 1 "GND" H 5855 1577 50  0000 C CNN
-F 2 "" H 5850 1750 50  0001 C CNN
-F 3 "" H 5850 1750 50  0001 C CNN
-	1    5850 1750
+P 5300 2100
+F 0 "#PWR0113" H 5300 1850 50  0001 C CNN
+F 1 "GND" H 5305 1927 50  0000 C CNN
+F 2 "" H 5300 2100 50  0001 C CNN
+F 3 "" H 5300 2100 50  0001 C CNN
+	1    5300 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 1750 5850 1750
 Text GLabel 5600 1550 2    50   Input ~ 0
 D+
-Text GLabel 5600 1450 2    50   Input ~ 0
+Text GLabel 5600 1650 2    50   Input ~ 0
 D-
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX3
@@ -569,4 +556,17 @@ Text GLabel 4450 2100 2    50   Input ~ 0
 COL0
 Text GLabel 4450 2200 2    50   Input ~ 0
 ROW1
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5EBC7237
+P 5300 1550
+F 0 "J?" H 5357 2017 50  0000 C CNN
+F 1 "USB_B_Micro" H 5357 1926 50  0000 C CNN
+F 2 "" H 5450 1500 50  0001 C CNN
+F 3 "~" H 5450 1500 50  0001 C CNN
+	1    5300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1950 5300 2100
 $EndSCHEMATC
